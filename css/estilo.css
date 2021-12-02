@@ -1,0 +1,16 @@
+body {
+    background-color: #d7e7d0;
+    background-image: url('../images/Imagem8.png');
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.card {
+   /* opacity: 0.9; */
+}
+
+p {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}

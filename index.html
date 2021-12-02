@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas e Respostas</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+
+<body class="pt-5">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <p id="pergunta" class="display-3 card-header"></p>
+                    <div class="card-body">
+                        <h3 id="dificuldade" class="display-6"></h3>
+                        <h3 id="a" class=""></h3>
+                        <h3 id="b" class=""></h3>
+                        <h3 id="c" class="pb-5"></h3>
+                        <div class="d-flex justify-content-between pt-5">
+                            <button class="btn btn-secondary" onclick="anterior()">Voltar</button>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Verificar resposta</button>
+                            <button class="btn btn-secondary" onclick="proxima()">Proxima</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">RESPOSTA</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>A alternativa certa é ...</p>
+                <p id="certa" class="display-4"></p>
+                <img id="img-modal" src="" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+</script>
+<script src="js/bootstrap.js"></script>
+<script src="js/utilitarios.js"></script>
+
+</html>
